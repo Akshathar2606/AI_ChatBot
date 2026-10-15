@@ -1,0 +1,33 @@
+id,customer_message,expected_intent,expected_escalation
+1,Hi there,greeting,false
+2,Good morning,greeting,false
+3,Thanks for your help goodbye,goodbye,false
+4,Bye for now,goodbye,false
+5,Where is my order?,order_tracking,false
+6,Can you track order ORD12345?,order_tracking,false
+7,Has my order ORD67890 been confirmed?,order_status,false
+8,Please cancel order ORD12345,order_cancellation,false
+9,My package is late and the order number is ORD23456,delivery_delay,false
+10,I still have not received my delivery for ORD34567,delivery_delay,false
+11,I would like to return order ORD45678,return_request,false
+12,Can I get a refund for order ORD56789?,refund_status,false
+13,Please check refund transaction TXN12345,refund_status,false
+14,My card payment failed for transaction TXN23456,payment_failed,false
+15,I was charged twice for one purchase,payment_issue,false
+16,What are the dimensions of product PROD456?,product_information,false
+17,Can you tell me whether the blue jacket is available?,product_information,false
+18,I cannot log in to my account,account_login,false
+19,The app keeps rejecting my password when I sign in,account_login,false
+20,I forgot my password and need to reset it,password_reset,false
+21,The item in order ORD67891 arrived broken,damaged_product,false
+22,My new headphones are damaged,damaged_product,false
+23,"I am unhappy with the service, nobody has replied to my emails",complaint,false
+24,I have had a terrible experience with this order,complaint,false
+25,I want to speak to a human agent,human_agent,true
+26,Please connect me with a real person,human_agent,true
+27,I think someone used my card without permission,complaint,true
+28,There is a fraudulent charge on my account,complaint,true
+29,What is the weather forecast for tomorrow?,unknown,false
+30,Can you write me a poem about space?,unknown,false
+31,Something is wrong,complaint,true
+32,I need help with an issue,complaint,false

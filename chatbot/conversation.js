@@ -19,7 +19,11 @@ function getResponse(intent, confidence, message, clarificationAttempts = 0) {
     };
   }
 
-  if (needsClarification(confidence) || !Object.prototype.hasOwnProperty.call(responses, intent)) {
+  if (
+    needsClarification(confidence) ||
+    intent === 'unknown' ||
+    !Object.prototype.hasOwnProperty.call(responses, intent)
+  ) {
     return {
       reply: CLARIFICATION_REPLY,
       intent: 'unknown',
