@@ -1,0 +1,663 @@
+{
+  "test_cases_evaluated": 32,
+  "accuracy": 0.8438,
+  "macro_precision": 0.8824,
+  "macro_recall": 0.9314,
+  "macro_f1": 0.8706,
+  "labels": [
+    "account_login",
+    "complaint",
+    "damaged_product",
+    "delivery_delay",
+    "goodbye",
+    "greeting",
+    "human_agent",
+    "order_cancellation",
+    "order_status",
+    "order_tracking",
+    "password_reset",
+    "payment_failed",
+    "payment_issue",
+    "product_information",
+    "refund_status",
+    "return_request",
+    "unknown"
+  ],
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "classification_report": {
+    "account_login": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "complaint": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "damaged_product": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "delivery_delay": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 2.0
+    },
+    "goodbye": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "greeting": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "human_agent": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "order_cancellation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "order_status": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 1.0
+    },
+    "order_tracking": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "password_reset": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "payment_failed": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 1.0
+    },
+    "payment_issue": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.5,
+      "support": 1.0
+    },
+    "product_information": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "refund_status": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "return_request": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "unknown": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "accuracy": 0.84375,
+    "macro avg": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9313725490196078,
+      "f1-score": 0.8705882352941176,
+      "support": 32.0
+    },
+    "weighted avg": {
+      "precision": 0.9270833333333333,
+      "recall": 0.84375,
+      "f1-score": 0.8364583333333333,
+      "support": 32.0
+    }
+  },
+  "predictions": [
+    {
+      "customer_message": "Hi there",
+      "expected_intent": "greeting",
+      "predicted_intent": "greeting",
+      "correct": true
+    },
+    {
+      "customer_message": "Good morning",
+      "expected_intent": "greeting",
+      "predicted_intent": "greeting",
+      "correct": true
+    },
+    {
+      "customer_message": "Thanks for your help goodbye",
+      "expected_intent": "goodbye",
+      "predicted_intent": "goodbye",
+      "correct": true
+    },
+    {
+      "customer_message": "Bye for now",
+      "expected_intent": "goodbye",
+      "predicted_intent": "goodbye",
+      "correct": true
+    },
+    {
+      "customer_message": "Where is my order?",
+      "expected_intent": "order_tracking",
+      "predicted_intent": "order_tracking",
+      "correct": true
+    },
+    {
+      "customer_message": "Can you track order ORD12345?",
+      "expected_intent": "order_tracking",
+      "predicted_intent": "order_tracking",
+      "correct": true
+    },
+    {
+      "customer_message": "Has my order ORD67890 been confirmed?",
+      "expected_intent": "order_status",
+      "predicted_intent": "order_status",
+      "correct": true
+    },
+    {
+      "customer_message": "Please cancel order ORD12345",
+      "expected_intent": "order_cancellation",
+      "predicted_intent": "order_cancellation",
+      "correct": true
+    },
+    {
+      "customer_message": "My package is late and the order number is ORD23456",
+      "expected_intent": "delivery_delay",
+      "predicted_intent": "delivery_delay",
+      "correct": true
+    },
+    {
+      "customer_message": "I still have not received my delivery for ORD34567",
+      "expected_intent": "delivery_delay",
+      "predicted_intent": "delivery_delay",
+      "correct": true
+    },
+    {
+      "customer_message": "I would like to return order ORD45678",
+      "expected_intent": "return_request",
+      "predicted_intent": "return_request",
+      "correct": true
+    },
+    {
+      "customer_message": "Can I get a refund for order ORD56789?",
+      "expected_intent": "refund_status",
+      "predicted_intent": "order_status",
+      "correct": false
+    },
+    {
+      "customer_message": "Please check refund transaction TXN12345",
+      "expected_intent": "refund_status",
+      "predicted_intent": "refund_status",
+      "correct": true
+    },
+    {
+      "customer_message": "My card payment failed for transaction TXN23456",
+      "expected_intent": "payment_failed",
+      "predicted_intent": "payment_failed",
+      "correct": true
+    },
+    {
+      "customer_message": "I was charged twice for one purchase",
+      "expected_intent": "payment_issue",
+      "predicted_intent": "payment_issue",
+      "correct": true
+    },
+    {
+      "customer_message": "What are the dimensions of product PROD456?",
+      "expected_intent": "product_information",
+      "predicted_intent": "product_information",
+      "correct": true
+    },
+    {
+      "customer_message": "Can you tell me whether the blue jacket is available?",
+      "expected_intent": "product_information",
+      "predicted_intent": "product_information",
+      "correct": true
+    },
+    {
+      "customer_message": "I cannot log in to my account",
+      "expected_intent": "account_login",
+      "predicted_intent": "account_login",
+      "correct": true
+    },
+    {
+      "customer_message": "The app keeps rejecting my password when I sign in",
+      "expected_intent": "account_login",
+      "predicted_intent": "account_login",
+      "correct": true
+    },
+    {
+      "customer_message": "I forgot my password and need to reset it",
+      "expected_intent": "password_reset",
+      "predicted_intent": "password_reset",
+      "correct": true
+    },
+    {
+      "customer_message": "The item in order ORD67891 arrived broken",
+      "expected_intent": "damaged_product",
+      "predicted_intent": "damaged_product",
+      "correct": true
+    },
+    {
+      "customer_message": "My new headphones are damaged",
+      "expected_intent": "damaged_product",
+      "predicted_intent": "damaged_product",
+      "correct": true
+    },
+    {
+      "customer_message": "I am unhappy with the service, nobody has replied to my emails",
+      "expected_intent": "complaint",
+      "predicted_intent": "complaint",
+      "correct": true
+    },
+    {
+      "customer_message": "I have had a terrible experience with this order",
+      "expected_intent": "complaint",
+      "predicted_intent": "complaint",
+      "correct": true
+    },
+    {
+      "customer_message": "I want to speak to a human agent",
+      "expected_intent": "human_agent",
+      "predicted_intent": "human_agent",
+      "correct": true
+    },
+    {
+      "customer_message": "Please connect me with a real person",
+      "expected_intent": "human_agent",
+      "predicted_intent": "human_agent",
+      "correct": true
+    },
+    {
+      "customer_message": "I think someone used my card without permission",
+      "expected_intent": "complaint",
+      "predicted_intent": "payment_failed",
+      "correct": false
+    },
+    {
+      "customer_message": "There is a fraudulent charge on my account",
+      "expected_intent": "complaint",
+      "predicted_intent": "payment_issue",
+      "correct": false
+    },
+    {
+      "customer_message": "What is the weather forecast for tomorrow?",
+      "expected_intent": "unknown",
+      "predicted_intent": "unknown",
+      "correct": true
+    },
+    {
+      "customer_message": "Can you write me a poem about space?",
+      "expected_intent": "unknown",
+      "predicted_intent": "unknown",
+      "correct": true
+    },
+    {
+      "customer_message": "Something is wrong",
+      "expected_intent": "complaint",
+      "predicted_intent": "delivery_delay",
+      "correct": false
+    },
+    {
+      "customer_message": "I need help with an issue",
+      "expected_intent": "complaint",
+      "predicted_intent": "payment_issue",
+      "correct": false
+    }
+  ],
+  "note": "Results are from the separate team test cases. The test cases were not used to train the model."
+}
