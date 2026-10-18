@@ -1,0 +1,8 @@
+{
+  "test_examples": 4500,
+  "test_accuracy": 0.9113333333333333,
+  "test_macro_f1": 0.9102406922399883,
+  "oos_test_examples": 1000,
+  "oos_messages_predicted_as_known_intents": 1000,
+  "note": "OOS detection requires a separate rejection rule or classifier."
+}
