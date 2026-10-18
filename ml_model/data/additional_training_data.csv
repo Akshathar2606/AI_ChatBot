@@ -1,0 +1,87 @@
+
+text,intent
+Hey there,greeting
+Is anyone available to help me?,greeting
+Hello support team,greeting
+I have a question for you,greeting
+Good afternoon,greeting
+Can you locate my parcel?,order_tracking
+Where is shipment ORD90210?,order_tracking
+I need an update on my package location,order_tracking
+Track shipment number 45678,order_tracking
+My parcel tracking has not updated,order_tracking
+Did my order go through?,order_status
+Can you check my purchase status?,order_status
+What stage is my order at?,order_status
+Has the seller accepted my order?,order_status
+Please verify order ORD34567 status,order_status
+Please withdraw my order,order_cancellation
+I changed my mind about this purchase,order_cancellation
+Can you stop order ORD90876?,order_cancellation
+I placed an order by mistake and want to cancel it,order_cancellation
+How can I stop my purchase from shipping?,order_cancellation
+My parcel is arriving later than promised,delivery_delay
+My delivery date has passed,delivery_delay
+The courier has not delivered my package,delivery_delay
+My order still has not arrived,delivery_delay
+Why has my shipment been delayed?,delivery_delay
+I want to send this product back for a return,return_request
+What is your return procedure?,return_request
+The item is unsuitable and I want to return it,return_request
+Help me initiate a product return,return_request
+Can you provide a return label?,return_request
+When will my money be returned?,refund_status
+My refund has not reached my account,refund_status
+How long does the refund take?,refund_status
+Please check the progress of my refund,refund_status
+I am waiting for my refund payment,refund_status
+My payment was declined at checkout,payment_failed
+The transaction failed when I paid,payment_failed
+My card payment did not go through,payment_failed
+I received an error while making payment,payment_failed
+The checkout says payment unsuccessful,payment_failed
+I was charged twice for one purchase,payment_issue
+My payment receipt shows the wrong amount,payment_issue
+I cannot complete payment on the website,payment_issue
+The payment page keeps giving me an error,payment_issue
+I have a problem with my transaction,payment_issue
+Tell me more about this product,product_information
+What features does this item have?,product_information
+Is this product available in another size?,product_information
+Can you explain the product specifications?,product_information
+What colours are available for this item?,product_information
+I cannot sign in to my account,account_login
+My account login is not working,account_login
+The website will not let me log in,account_login
+I am unable to access my account,account_login
+Why does my sign-in keep failing?,account_login
+I need to reset my account password,password_reset
+How do I create a new password?,password_reset
+I forgot the password for my account,password_reset
+Please help me change my password,password_reset
+The password reset link is not working,password_reset
+My product arrived broken,damaged_product
+The item is cracked and unusable,damaged_product
+I received a damaged package and product,damaged_product
+The product was scratched when it arrived,damaged_product
+My order arrived with a broken part,damaged_product
+I am unhappy with the service I received,complaint
+I want to make a formal complaint,complaint
+This experience has been unacceptable,complaint
+I am very disappointed with your company,complaint
+I want to report suspicious activity on my account,complaint
+I need to speak with a real person,human_agent
+Please transfer me to customer support,human_agent
+Can a live representative assist me?,human_agent
+I do not want to speak to a bot,human_agent
+Connect me to a customer service agent,human_agent
+"Thanks, that is all goodbye",goodbye
+Bye and have a nice day,goodbye
+I do not need anything else,goodbye
+That answers my question,goodbye
+See you later,goodbye
+Blue clouds are dancing on my sandwich,unknown
+Tell me a random joke about planets,unknown
+Can you explain how volcanoes form?,unknown
+What is the capital of Japan?,unknown
+I would like to discuss a topic unrelated to shopping,unknown

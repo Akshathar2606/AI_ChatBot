@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 MODEL_DIR = BASE_DIR / "models"
 
-DATA_FILE = DATA_DIR / "training_data.csv"
+DATA_FILE = DATA_DIR / "combined_training_data.csv"
 INTENTS_FILE = DATA_DIR / "intents.json"
 
 

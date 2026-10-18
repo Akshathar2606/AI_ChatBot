@@ -1,0 +1,13 @@
+text,intent
+"I want to complain about the service I received",complaint
+"I am dissatisfied with the way your staff treated me",complaint
+"Your customer support has been unhelpful",complaint
+"I would like to file a complaint about your company",complaint
+"I am upset about the way this issue was handled",complaint
+"This is unacceptable customer service",complaint
+"I want to escalate my complaint to a supervisor",complaint
+"I am unhappy with the overall experience",complaint
+"I want to report misconduct by a customer service representative",complaint
+"I am not satisfied with the resolution you provided",complaint
+"Please tell me whether my refund has been processed",refund_status
+"My refund is overdue and I want to know its status",refund_status
