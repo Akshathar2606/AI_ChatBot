@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "models" / "intent_model.joblib"
 
 # Experimental threshold; validate before deployment.
-CONFIDENCE_THRESHOLD = 0.05
+CONFIDENCE_THRESHOLD = 0.10
 
 
 def predict_intent(message):
