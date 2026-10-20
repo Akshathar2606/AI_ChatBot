@@ -1,0 +1,70 @@
+{
+  "test_cases": 32,
+  "raw_accuracy": 0.875,
+  "note": "SVM scores are relative, not calibrated probabilities. Thresholds are experimental; this same test set has been used for comparison and should not be treated as an unbiased final estimate.",
+  "results": [
+    {
+      "threshold": 0.0,
+      "accuracy": 0.875,
+      "macro_precision": 0.9264705882352942,
+      "macro_recall": 0.9411764705882353,
+      "macro_f1": 0.9058823529411764,
+      "clarification_count": 0,
+      "correct_predictions_changed_to_unknown": 0
+    },
+    {
+      "threshold": 0.05,
+      "accuracy": 0.875,
+      "macro_precision": 0.9264705882352942,
+      "macro_recall": 0.9411764705882353,
+      "macro_f1": 0.9058823529411764,
+      "clarification_count": 0,
+      "correct_predictions_changed_to_unknown": 0
+    },
+    {
+      "threshold": 0.1,
+      "accuracy": 0.8125,
+      "macro_precision": 0.896078431372549,
+      "macro_recall": 0.9215686274509804,
+      "macro_f1": 0.8641456582633052,
+      "clarification_count": 3,
+      "correct_predictions_changed_to_unknown": 2
+    },
+    {
+      "threshold": 0.12,
+      "accuracy": 0.78125,
+      "macro_precision": 0.9264705882352942,
+      "macro_recall": 0.8921568627450981,
+      "macro_f1": 0.8638655462184873,
+      "clarification_count": 6,
+      "correct_predictions_changed_to_unknown": 3
+    },
+    {
+      "threshold": 0.15,
+      "accuracy": 0.71875,
+      "macro_precision": 0.893048128342246,
+      "macro_recall": 0.8333333333333334,
+      "macro_f1": 0.8192199956905839,
+      "clarification_count": 10,
+      "correct_predictions_changed_to_unknown": 6
+    },
+    {
+      "threshold": 0.18,
+      "accuracy": 0.5625,
+      "macro_precision": 0.7720588235294118,
+      "macro_recall": 0.6568627450980393,
+      "macro_f1": 0.6573295985060691,
+      "clarification_count": 16,
+      "correct_predictions_changed_to_unknown": 12
+    },
+    {
+      "threshold": 0.2,
+      "accuracy": 0.53125,
+      "macro_precision": 0.7128027681660899,
+      "macro_recall": 0.627450980392157,
+      "macro_f1": 0.6174259177355153,
+      "clarification_count": 17,
+      "correct_predictions_changed_to_unknown": 13
+    }
+  ]
+}

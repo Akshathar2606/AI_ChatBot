@@ -1,0 +1,17 @@
+
+text,intent
+"Someone charged my card without my permission and I want to report it",complaint
+"I am furious about how your support team handled my case",complaint
+"I have contacted support several times and nobody has solved my problem",complaint
+"I want to report the unacceptable way this issue was handled",complaint
+"Your company has not taken my complaint seriously",complaint
+"I want this matter escalated to a supervisor immediately",complaint
+"I am dissatisfied with the response I received from customer service",complaint
+"I want to report misconduct by a member of your staff",complaint
+"This unresolved issue has caused me a lot of frustration",complaint
+"I am unhappy with the way your team dealt with my concern",complaint
+"I believe my account was charged unfairly and want to raise a formal complaint",complaint
+"I have received no proper explanation for this problem",complaint
+"I want to make a formal complaint about the way my case was handled",complaint
+"I am frustrated that your team keeps ignoring my requests",complaint
+"I need to speak to a manager about this unacceptable service",complaint

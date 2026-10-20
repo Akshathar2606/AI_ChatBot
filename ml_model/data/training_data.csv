@@ -1,0 +1,103 @@
+text,intent
+Hi,greeting
+Hello there,greeting
+Good morning,greeting
+"Hey, can you help me?",greeting
+Good evening,greeting
+Hi customer support,greeting
+Where is my order?,order_tracking
+Track my package please,order_tracking
+Can you tell me where my parcel is?,order_tracking
+I need to track order ORD12345,order_tracking
+What is the current location of my shipment?,order_tracking
+Has my package moved yet?,order_tracking
+What is the status of my order?,order_status
+Has my order been confirmed?,order_status
+Is order ORD67890 being processed?,order_status
+Can I get an update on my purchase?,order_status
+Is my order still pending?,order_status
+Check the progress of my order,order_status
+Cancel my order please,order_cancellation
+I want to cancel order ORD12345,order_cancellation
+Please stop my purchase,order_cancellation
+Can you cancel the order I just placed?,order_cancellation
+I no longer want this order,order_cancellation
+How do I cancel my order?,order_cancellation
+My delivery is late,delivery_delay
+My package has not arrived on time,delivery_delay
+The order is delayed,delivery_delay
+My shipment is overdue,delivery_delay
+I was expecting my parcel yesterday,delivery_delay
+Why is my delivery taking so long?,delivery_delay
+I want to return this item,return_request
+How can I return my purchase?,return_request
+Please arrange a return for order ORD45678,return_request
+This product does not fit; I want to send it back,return_request
+Can I return something I bought?,return_request
+I need to start a return,return_request
+Where is my refund?,refund_status
+Has my refund been processed?,refund_status
+Check refund transaction TXN12345,refund_status
+When will I receive my money back?,refund_status
+My refund has not arrived,refund_status
+Please update me on my refund,refund_status
+My payment was declined,payment_failed
+The card transaction failed,payment_failed
+I could not complete payment,payment_failed
+Payment error appeared at checkout,payment_failed
+My transaction was unsuccessful,payment_failed
+The website says my payment failed,payment_failed
+I was charged twice,payment_issue
+There is an incorrect charge on my bill,payment_issue
+I have a billing problem,payment_issue
+Why was I charged an extra fee?,payment_issue
+My payment went through but the order failed,payment_issue
+I need help with a payment dispute,payment_issue
+What is the price of this product?,product_information
+Is the blue jacket available?,product_information
+Tell me the dimensions of product PROD456,product_information
+What sizes does this item come in?,product_information
+Can you describe this product?,product_information
+Do you have this item in stock?,product_information
+I cannot log into my account,account_login
+My account sign-in is not working,account_login
+The app rejects my login,account_login
+I am unable to access my account,account_login
+I keep getting an error when I sign in,account_login
+Why can't I log in?,account_login
+I forgot my password,password_reset
+Help me reset my password,password_reset
+How do I recover my account password?,password_reset
+Send me instructions to change my password,password_reset
+I need a new password,password_reset
+I cannot remember my login password,password_reset
+My item arrived broken,damaged_product
+The product is damaged,damaged_product
+My headphones arrived defective,damaged_product
+The package contained a cracked item,damaged_product
+This product does not work out of the box,damaged_product
+I received a broken product in my order,damaged_product
+I am unhappy with the service,complaint
+I want to make a complaint,complaint
+Nobody has replied to my emails,complaint
+This has been a terrible shopping experience,complaint
+I am disappointed with how this was handled,complaint
+I want to report poor customer service,complaint
+I want to speak to a human agent,human_agent
+Connect me with a real person,human_agent
+Can I talk to customer support staff?,human_agent
+Please transfer me to an operator,human_agent
+I need a live representative,human_agent
+Let me speak with a person,human_agent
+Goodbye,goodbye
+Bye for now,goodbye
+"Thanks, that's all",goodbye
+See you later,goodbye
+"Have a nice day, bye",goodbye
+"Thanks for your help, goodbye",goodbye
+Tell me a joke about penguins,unknown
+What is the weather tomorrow?,unknown
+Write a poem about mountains,unknown
+Who won the match last night?,unknown
+Explain quantum physics,unknown
+Recommend a movie to watch,unknown

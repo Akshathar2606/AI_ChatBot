@@ -1,0 +1,72 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "description": "The user is greeting the chatbot or starting a conversation."
+    },
+    {
+      "name": "order_tracking",
+      "description": "The user wants to track the current location or progress of an order."
+    },
+    {
+      "name": "order_status",
+      "description": "The user asks about the current status of an order."
+    },
+    {
+      "name": "order_cancellation",
+      "description": "The user wants to cancel an order."
+    },
+    {
+      "name": "delivery_delay",
+      "description": "The user reports that a delivery is delayed or late."
+    },
+    {
+      "name": "return_request",
+      "description": "The user wants to return a purchased product."
+    },
+    {
+      "name": "refund_status",
+      "description": "The user asks about the status of a refund."
+    },
+    {
+      "name": "payment_failed",
+      "description": "The user reports that a payment failed or was declined."
+    },
+    {
+      "name": "payment_issue",
+      "description": "The user has a general problem with a payment, charge, or billing."
+    },
+    {
+      "name": "product_information",
+      "description": "The user asks for product details, availability, specifications, or pricing."
+    },
+    {
+      "name": "account_login",
+      "description": "The user is having trouble logging into their account."
+    },
+    {
+      "name": "password_reset",
+      "description": "The user needs help resetting or recovering their password."
+    },
+    {
+      "name": "damaged_product",
+      "description": "The user received a damaged, broken, or defective product."
+    },
+    {
+      "name": "complaint",
+      "description": "The user wants to make a complaint or reports dissatisfaction."
+    },
+    {
+      "name": "human_agent",
+      "description": "The user wants to speak with a human customer-support agent."
+    },
+    {
+      "name": "goodbye",
+      "description": "The user is ending the conversation."
+    },
+    {
+      "name": "unknown",
+      "description": "The user message does not match any supported customer-service intent."
+    }
+  ]
+}
