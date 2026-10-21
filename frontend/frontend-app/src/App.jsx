@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/chat";
-
+const API_URL = "https://ai-chatbot-backend-z0z4.onrender.com/api/chat";
 function App() {
   const [sessionId] = useState(
     () => {
