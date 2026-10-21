@@ -1,0 +1,17 @@
+{
+  "Logistic Regression": {
+    "accuracy": 0.7358490566037735,
+    "macro_precision": 0.7485294117647059,
+    "macro_recall": 0.7222222222222222,
+    "macro_f1": 0.7124485088152909
+  },
+  "Linear SVM": {
+    "accuracy": 0.7547169811320755,
+    "macro_precision": 0.7679738562091503,
+    "macro_recall": 0.7287581699346406,
+    "macro_f1": 0.7237161531279179
+  },
+  "selected_model": "Linear SVM",
+  "selection_metric": "macro_f1",
+  "note": "Metrics are from a small held-out split; the saved model is refitted on all training examples."
+}
