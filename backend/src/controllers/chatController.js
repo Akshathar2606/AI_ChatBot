@@ -45,8 +45,11 @@ const handleChat = async (req, res, next) => {
 
     // Step 4: Generate chatbot response
     // M4 owns detailed response logic - this uses the service interface
-    const responseData = responseService.generateResponse(intent, confidence);
-    const { reply, escalated } = responseData;
+const responseData = responseService.generateResponse(
+  intent,
+  confidence,
+  message.trim()
+);    const { reply, escalated } = responseData;
 
     // Step 5: Create or find Session
     let session;

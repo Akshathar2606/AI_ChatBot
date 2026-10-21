@@ -1,5 +1,5 @@
-const ESCALATION_THRESHOLD = 0.40;
-const CLARIFICATION_THRESHOLD = 0.70;
+const ESCALATION_THRESHOLD = 0.10;
+const CLARIFICATION_THRESHOLD = 0.20;
 
 function normalizeMessage(message) {
   if (typeof message !== 'string') {
@@ -21,7 +21,10 @@ function containsHumanRequest(message) {
     'customer support agent',
     'real person',
     'speak to someone',
-    'connect me to support'
+    'speak to a human',
+    'speak to an agent',
+    'connect me to support',
+    'connect me to an agent'
   ];
 
   return patterns.some((pattern) => message.includes(pattern));
@@ -36,15 +39,34 @@ function containsSecurityIssue(message) {
     'fraud',
     'fraudulent',
     'unauthorized transaction',
+    'unauthorised transaction',
     'scam',
-    'stolen'
+    'stolen',
+    'used my card without permission',
+    'someone used my card',
+    'card used without my permission',
+    'unauthorized card use',
+    'unauthorised card use',
+    'charged without my permission',
+    'transaction without my permission',
+    'used my credit card without permission',
+    'used my debit card without permission'
   ];
+
 
   return patterns.some((pattern) => message.includes(pattern));
 }
 
-function shouldEscalate(intent, confidence, message, clarificationAttempts = 0) {
-  if (typeof intent === 'string' && intent.toLowerCase() === 'human_agent') {
+function shouldEscalate(
+  intent,
+  confidence,
+  message,
+  clarificationAttempts = 0
+) {
+  if (
+    typeof intent === 'string' &&
+    intent.toLowerCase() === 'human_agent'
+  ) {
     return true;
   }
 
@@ -58,30 +80,33 @@ function shouldEscalate(intent, confidence, message, clarificationAttempts = 0) 
     return true;
   }
 
+  if (
+    Number.isFinite(clarificationAttempts) &&
+    clarificationAttempts >= 2
+  ) {
+    return true;
+  }
+
   const numericConfidence = Number(confidence);
+
   if (!Number.isFinite(numericConfidence)) {
     return false;
   }
 
-  if (numericConfidence < ESCALATION_THRESHOLD) {
-    return true;
-  }
-
-  if (Number.isFinite(clarificationAttempts) && clarificationAttempts >= 2) {
-    return true;
-  }
-
-  return false;
+  return numericConfidence < ESCALATION_THRESHOLD;
 }
 
 function needsClarification(confidence) {
   const numericConfidence = Number(confidence);
 
   if (!Number.isFinite(numericConfidence)) {
-    return false;
+    return true;
   }
 
-  return numericConfidence >= ESCALATION_THRESHOLD && numericConfidence < CLARIFICATION_THRESHOLD;
+  return (
+    numericConfidence >= ESCALATION_THRESHOLD &&
+    numericConfidence < CLARIFICATION_THRESHOLD
+  );
 }
 
 module.exports = {
