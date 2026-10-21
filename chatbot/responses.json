@@ -1,0 +1,172 @@
+{
+  "greeting": {
+    "responses": [
+      "Hello! How can I help you today?",
+      "Hi there! I’m here to help with your order, account, or product questions.",
+      "Welcome! What can I assist you with today?"
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": false
+  },
+  "order_tracking": {
+    "responses": [
+      "I can help you track your order and review its progress.",
+      "I’ll check the current status and progress of your order.",
+      "I can help with tracking and provide an update on your order."
+    ],
+    "requires": ["order_id"],
+    "escalate": false,
+    "mayEscalate": false
+  },
+  "order_status": {
+    "responses": [
+      "I can help review your order status.",
+      "I’ll check the current status of your order.",
+      "I can look into your order status and share an update."
+    ],
+    "requires": ["order_id"],
+    "escalate": false,
+    "mayEscalate": false
+  },
+  "order_cancellation": {
+    "responses": [
+      "I can help with your order cancellation request.",
+      "I’ll review the cancellation options for your order.",
+      "I can assist with the next steps for canceling your order."
+    ],
+    "requires": ["order_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "delivery_delay": {
+    "responses": [
+      "I’m sorry about the delay. I’ll help review your delivery status.",
+      "I can assist with your delayed delivery and check its progress.",
+      "Thank you for letting us know. I’ll look into the delivery delay."
+    ],
+    "requires": ["order_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "return_request": {
+    "responses": [
+      "I can help with your return request and explain the next steps.",
+      "I’ll review your return request and guide you through the process.",
+      "I can guide you through the return process for your order."
+    ],
+    "requires": ["order_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "refund_status": {
+    "responses": [
+      "I can help review the refund status associated with the ID you provided.",
+      "I’ll check the refund status for your order or transaction.",
+      "I can look into your refund and share an update."
+    ],
+    "requires": ["order_id", "transaction_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "payment_failed": {
+    "responses": [
+      "I’m sorry your payment did not go through. I’ll help review the failed payment.",
+      "I can help investigate the failed payment and guide you through the next steps.",
+      "I can troubleshoot the payment issue and check what happened."
+    ],
+    "requires": ["transaction_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "payment_issue": {
+    "responses": [
+      "I can help review your payment concern.",
+      "I’ll look into the payment issue and guide you through the next steps.",
+      "I’d be happy to assist with your payment issue."
+    ],
+    "requires": ["transaction_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "product_information": {
+    "responses": [
+      "I can help with details about the product you mentioned.",
+      "I’ll find information about the product you’re asking about.",
+      "I can assist with information for that product."
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": false
+  },
+  "account_login": {
+    "responses": [
+      "I can help troubleshoot your login issue. Please share the email or username associated with the account so I can guide you.",
+      "I’m sorry you’re having trouble signing in. Please provide the account details needed for troubleshooting.",
+      "I can help with account login problems. Please tell me the account email or username."
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "password_reset": {
+    "responses": [
+      "I can help reset your password. Please provide the email address associated with the account so I can guide you.",
+      "To reset your password, please share the account email address.",
+      "I can assist with a password reset. Please send the email linked to your account."
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": false
+  },
+  "damaged_product": {
+    "responses": [
+      "I’m sorry your product arrived damaged. I’ll help you with the next steps.",
+      "I can assist with the damaged product issue you reported.",
+      "Thank you for reporting this. I’ll review the damaged product case."
+    ],
+    "requires": ["order_id"],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "complaint": {
+    "responses": [
+      "I’m sorry to hear that. Please share the details of your concern, and I can help escalate it if needed.",
+      "Thank you for your feedback. Please tell me what happened so I can assist or escalate appropriately.",
+      "I’m sorry you had this experience. Please share the details and I’ll help with the next steps."
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": true
+  },
+  "human_agent": {
+    "responses": [
+      "I can connect you with a human support agent. Please share the issue details and I’ll escalate this for you.",
+      "I’m ready to connect you with a human agent. Please provide a brief summary of the issue.",
+      "I can transfer this to a human support representative. Please tell me the issue so I can escalate it."
+    ],
+    "requires": [],
+    "escalate": true,
+    "mayEscalate": true
+  },
+  "goodbye": {
+    "responses": [
+      "Thank you for contacting us. Have a great day!",
+      "Goodbye! We’re here if you need further assistance.",
+      "It was a pleasure helping you. Take care!"
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": false
+  },
+  "unknown": {
+    "responses": [
+      "I’m not sure I understood that. Could you please clarify what you need help with?",
+      "Could you please rephrase your request so I can assist you properly?",
+      "I’m here to help, but I need a bit more detail. What would you like help with?"
+    ],
+    "requires": [],
+    "escalate": false,
+    "mayEscalate": false
+  }
+}
